@@ -45,7 +45,7 @@ class RankStore
      * @param Player $player
      * @return bool|Rank
      */
-    public function getNextRank(Player $player)
+    public function getNextRank($player)
     {
         //TODO check if perm is linked
         $group = $this->getMain()->getPermManager()->getGroup($player);
